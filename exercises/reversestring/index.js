@@ -6,6 +6,30 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
-function reverse(str) {}
+//SOLUTION ONE:
+// function reverse(str) {
+//   return str.split("").reverse().join("")
+// }
+
+//SOLUTION TWO, USING FOR OF LOOP
+// function reverse(str) {
+//   let reversed = '';
+//
+//    for (let character of str) {
+//      reversed = character + reversed;
+//    }
+//
+//    return reversed;
+// }
+
+//SOLUTION THREE, BUT YOU COULD REMOVE CURLY BRACES AND RETURN STATEMENT.
+//THIS IS A GOOD WAY TO WOW THE INTERVIEWER.
+function reverse(str) {
+  return str.split('').reduce((reversed, character) => {
+    return character + reversed
+  }, '')
+}
+
+// reverse('asdf')
 
 module.exports = reverse;
