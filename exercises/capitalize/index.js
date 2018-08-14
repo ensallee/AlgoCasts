@@ -7,13 +7,13 @@
 //   capitalize('a lazy fox') --> 'A Lazy Fox'
 //   capitalize('look, it is working!') --> 'Look, It Is Working!'
 
-// MY SOLUTION
-// function capitalize(str) {
-//   return str.split(" ").map(word => {
-//     let cap = word[0].toUpperCase()
-//     return cap += word.slice(1)
-//   }).join(" ")
-// }
+MY SOLUTION
+function capitalize(str) {
+  return str.split(" ").map(word => {
+    let cap = word[0].toUpperCase()
+    return cap += word.slice(1)
+  }).join(" ")
+}
 
 //GRIDERS SOLUTION
 // function capitalize(str) {
