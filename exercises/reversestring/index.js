@@ -24,12 +24,57 @@
 
 //SOLUTION THREE, BUT YOU COULD REMOVE CURLY BRACES AND RETURN STATEMENT.
 //THIS IS A GOOD WAY TO WOW THE INTERVIEWER.
-function reverse(str) {
-  return str.split('').reduce((reversed, character) => {
-    return character + reversed
-  }, '')
-}
+// function reverse(str) {
+//   return str.split('').reduce((reversed, character) => {
+//     return character + reversed
+//   }, '')
+// }
 
 // reverse('asdf')
+
+
+function reverse(str) {
+  let reversed = '';
+
+  for (let char of str) {
+    reversed = char + reversed
+  }
+
+  return reversed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 module.exports = reverse;

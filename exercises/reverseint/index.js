@@ -29,13 +29,38 @@
 //   }
 // }
 
-//GRIDERS SOLUTION:
-//Parse Int is getting rid of 0's at the beginning.
+// GRIDERS SOLUTION:
+// Parse Int is getting rid of 0's at the beginning.
 function reverseInt(n) {
   const reversed = n.toString().split('').reverse().join('')
 
   return parseInt(reversed) * Math.sign(n)
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 reverseInt(500);
 

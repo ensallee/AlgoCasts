@@ -9,13 +9,13 @@
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
 //MY SOLUTION
-// function chunk(array, size) {
-//   let newArray = []
-//   while (array.length > 0) {
-//     newArray.push(array.splice(0, size))
-//   }
-//   return newArray
-// }
+function chunk(array, size) {
+  let newArray = []
+  while (array.length > 0) {
+    newArray.push(array.splice(0, size))
+  }
+  return newArray
+}
 
 //STEPHEN GRIDER'S FIRST SOLUTION
 // function chunk(array, size) {
@@ -34,14 +34,14 @@
 // }
 
 //STEPHEN GRIDER'S SECOND SOLUTION:
-function chunk(array, size) {
-  const chunked = []
-  let index = 0
-  while (index < array.length) {
-    chunked.push(array.slice(index, index + size));
-    index += size;
-  }
-  return chunked
-}
+// function chunk(array, size) {
+//   const chunked = []
+//   let index = 0
+//   while (index < array.length) {
+//     chunked.push(array.slice(index, index + size));
+//     index += size;
+//   }
+//   return chunked
+// }
 
 module.exports = chunk;
